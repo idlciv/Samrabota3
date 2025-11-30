@@ -140,8 +140,6 @@ section h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
 .ai-definition-card h3,
 .ai-application-card h3 {
     color: #ff66a3;
@@ -155,11 +153,11 @@ section h2 {
     color: #666;
 }
 
-/* Сетки */
+/* Сетки — ТЕПЕРЬ ФИКСИРОВАННАЯ 3 КОЛОНКИ ДЛЯ ДЕСКТОПА */
 .ai-definition-grid,
 .ai-applications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr; /* Всегда 3 одинаковые колонки */
     gap: 20px;
     margin-bottom: 30px;
 }
@@ -179,8 +177,6 @@ section h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
-
-
 
 .ai-how-item h3 {
     color: #ff66a3;
